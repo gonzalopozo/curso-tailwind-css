@@ -8,47 +8,27 @@
     <link rel="stylesheet" href="./output.css">
 </head>
 
-<body>
-    <main>
-        <h1 class="text-3xl font-bold underline">
-            Hello world!
-        </h1>
-        <p class="text-lg text-gray-700">
-            This is a simple example of using Tailwind CSS.
-        </p>
-        <button class="bg-blue-500 text-white font-bold py-2 px-4 rounded hover:bg-blue-700">
-            Click Me
-        </button>
-        <div class="mt-4">
-            <p class="text-sm text-gray-500">
-                This is a paragraph styled with Tailwind CSS.
-            </p>
-        </div>
-        <div class="mt-4">
-            <p class="text-red-500">
-                This is a red text paragraph.
-            </p>
-        </div>
-        <div class="mt-4">
-            <p class="text-green-500">
-                This is a green text paragraph.
-            </p>
-        </div>
-        <div class="mt-4">
-            <p class="text-blue-500">
-                This is a blue text paragraph.
-            </p>
-        </div>
-        <div class="mt-4">
-            <p class="text-yellow-500">
-                This is a yellow text paragraph.
-            </p>
-        </div>
-        <div class="mt-4">
-            <p class="text-purple-500">
-                This is a purple text paragraph.
-            </p>
-        </div>
+<body class="bg-linear-to-b from-emerald-300 to-emerald-100 h-screen flex flex-col overflow-hidden">
+    <header class="flex justify-between items-center text-gray-600 py-6 px-10 flex-shrink-0">
+        <figure>
+            <img src="./assets/logo.png" alt="Imagen de logo de Nike" class="w-full max-w-md h-16">
+        </figure>
+        <nav>
+            <ul class="flex space-x-4 text-xl font-semibold antialiased">
+                <li class="hover:text-emerald-600 hover:underline"><a href="#">Services</a></li>
+                <li class="hover:text-emerald-600 hover:underline"><a href="#">About</a></li>
+                <li class="hover:text-emerald-600 hover:underline"><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="flex-1 flex">
+        <section class="flex justify-center items-center w-full flex-col text-center">
+            <div class="group bg-white/20 backdrop-blur-sm border border-white/30 rounded-2xl p-8 hover:bg-white/30 hover:shadow-2xl hover:shadow-emerald-500/20 hover:-translate-y-2 hover:scale-105 transition-all duration-500 ease-out max-w-2xl">
+                <h1 class="text-4xl font-extrabold text-gray-800 group-hover:text-emerald-800 transition-colors duration-300">Bienvenido a la Nike Store</h1>
+                <p class="mt-4 text-lg text-gray-600 group-hover:text-gray-700 transition-colors duration-300">Explora nuestra colección de productos exclusivos.</p>
+                <button class="mt-6 px-6 py-3 bg-emerald-600 text-white rounded-xl hover:bg-emerald-700 hover:shadow-lg hover:shadow-emerald-600/30 hover:-translate-y-0.5 transform transition-all duration-300 font-semibold cursor-pointer">Ver productos</button>
+            </div>
+        </section>
     </main>
 </body>
 
