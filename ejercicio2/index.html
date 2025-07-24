@@ -2,31 +2,51 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./output.css">
+    <link rel="stylesheet" href="./output.css" />
 </head>
 
 <body class="bg-linear-to-b from-emerald-300 to-emerald-100 h-screen flex flex-col overflow-hidden">
     <header class="flex justify-between items-center text-gray-600 py-6 px-10 flex-shrink-0">
         <figure>
-            <img src="./assets/logo.png" alt="Imagen de logo de Nike" class="w-full max-w-md h-16">
+            <img src="./assets/logo.png" alt="Imagen de logo de Nike" class="w-full max-w-md h-16" />
         </figure>
         <nav>
             <ul class="flex space-x-4 text-xl font-semibold antialiased">
-                <li class="hover:text-emerald-600 hover:underline"><a href="#">Services</a></li>
-                <li class="hover:text-emerald-600 hover:underline"><a href="#">About</a></li>
-                <li class="hover:text-emerald-600 hover:underline"><a href="#">Contact</a></li>
+                <li class="hover:text-emerald-600 hover:underline">
+                    <a href="#">Services</a>
+                </li>
+                <li class="hover:text-emerald-600 hover:underline">
+                    <a href="#">About</a>
+                </li>
+                <li class="hover:text-emerald-600 hover:underline">
+                    <a href="#">Contact</a>
+                </li>
             </ul>
         </nav>
     </header>
     <main class="flex-1 flex">
         <section class="flex justify-center items-center w-full flex-col text-center">
-            <div class="group bg-white/20 backdrop-blur-sm border border-white/30 rounded-2xl p-8 hover:bg-white/30 hover:shadow-2xl hover:shadow-emerald-500/20 hover:-translate-y-2 hover:scale-105 transition-all duration-500 ease-out max-w-2xl">
-                <h1 class="text-4xl font-extrabold text-gray-800 group-hover:text-emerald-800 transition-colors duration-300">Bienvenido a la Nike Store</h1>
-                <p class="mt-4 text-lg text-gray-600 group-hover:text-gray-700 transition-colors duration-300">Explora nuestra colección de productos exclusivos.</p>
-                <button class="mt-6 px-6 py-3 bg-emerald-600 text-white rounded-xl hover:bg-emerald-700 hover:shadow-lg hover:shadow-emerald-600/30 hover:-translate-y-0.5 transform transition-all duration-300 font-semibold cursor-pointer">Ver productos</button>
+            <div
+                class="group bg-white/20 backdrop-blur-sm border border-white/30 rounded-2xl p-8 hover:bg-white/30 hover:shadow-2xl hover:shadow-emerald-500/20 hover:-translate-y-2 hover:scale-105 transition-all duration-500 ease-out w-full max-w-4xl flex justify-around items-center overflow-hidden">
+                <div class="flex flex-col text-nowrap">
+                    <h1
+                        class="text-4xl font-extrabold text-gray-800 group-hover:text-emerald-800 transition-colors duration-300">
+                        Bienvenido a la Nike Store
+                    </h1>
+                    <p class="mt-4 text-lg text-gray-600 group-hover:text-gray-700 transition-colors duration-300">
+                        Explora nuestra colección de productos exclusivos.
+                    </p>
+                    <button
+                        class="mt-6 px-6 py-3 bg-emerald-600 text-white rounded-xl hover:bg-emerald-700 hover:shadow-lg hover:shadow-emerald-600/30 hover:-translate-y-0.5 transform transition-all duration-300 font-semibold cursor-pointer">
+                        Ver productos
+                    </button>
+                </div>
+                <figure>
+                    <img src="./assets/nike_shoe.png" alt="Imagen de los zapatos Nike" class="hue-rotate-150 w-64 object-contain drop-shadow-2xl transition-all duration-700 ease-out group-hover:scale-110 group-hover:rotate-[45deg] group-hover:drop-shadow-emerald-600/50">
+                </figure>
             </div>
         </section>
     </main>
